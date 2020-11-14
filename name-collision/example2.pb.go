@@ -2,9 +2,9 @@
 // versions:
 // 	protoc-gen-go v1.25.0
 // 	protoc        v3.12.2
-// source: example.proto
+// source: example2.proto
 
-package xx
+package example2
 
 import (
 	context "context"
@@ -41,7 +41,7 @@ type ExampleMessage1 struct {
 func (x *ExampleMessage1) Reset() {
 	*x = ExampleMessage1{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_example_proto_msgTypes[0]
+		mi := &file_example2_proto_msgTypes[0]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -54,7 +54,7 @@ func (x *ExampleMessage1) String() string {
 func (*ExampleMessage1) ProtoMessage() {}
 
 func (x *ExampleMessage1) ProtoReflect() protoreflect.Message {
-	mi := &file_example_proto_msgTypes[0]
+	mi := &file_example2_proto_msgTypes[0]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -67,7 +67,7 @@ func (x *ExampleMessage1) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use ExampleMessage1.ProtoReflect.Descriptor instead.
 func (*ExampleMessage1) Descriptor() ([]byte, []int) {
-	return file_example_proto_rawDescGZIP(), []int{0}
+	return file_example2_proto_rawDescGZIP(), []int{0}
 }
 
 func (x *ExampleMessage1) GetMyString() string {
@@ -91,7 +91,7 @@ type ExampleMessage2 struct {
 func (x *ExampleMessage2) Reset() {
 	*x = ExampleMessage2{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_example_proto_msgTypes[1]
+		mi := &file_example2_proto_msgTypes[1]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -104,7 +104,7 @@ func (x *ExampleMessage2) String() string {
 func (*ExampleMessage2) ProtoMessage() {}
 
 func (x *ExampleMessage2) ProtoReflect() protoreflect.Message {
-	mi := &file_example_proto_msgTypes[1]
+	mi := &file_example2_proto_msgTypes[1]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -117,7 +117,7 @@ func (x *ExampleMessage2) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use ExampleMessage2.ProtoReflect.Descriptor instead.
 func (*ExampleMessage2) Descriptor() ([]byte, []int) {
-	return file_example_proto_rawDescGZIP(), []int{1}
+	return file_example2_proto_rawDescGZIP(), []int{1}
 }
 
 func (x *ExampleMessage2) GetMyInt() int32 {
@@ -145,7 +145,7 @@ type ReturnType struct {
 func (x *ReturnType) Reset() {
 	*x = ReturnType{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_example_proto_msgTypes[2]
+		mi := &file_example2_proto_msgTypes[2]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -158,7 +158,7 @@ func (x *ReturnType) String() string {
 func (*ReturnType) ProtoMessage() {}
 
 func (x *ReturnType) ProtoReflect() protoreflect.Message {
-	mi := &file_example_proto_msgTypes[2]
+	mi := &file_example2_proto_msgTypes[2]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -171,7 +171,7 @@ func (x *ReturnType) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use ReturnType.ProtoReflect.Descriptor instead.
 func (*ReturnType) Descriptor() ([]byte, []int) {
-	return file_example_proto_rawDescGZIP(), []int{2}
+	return file_example2_proto_rawDescGZIP(), []int{2}
 }
 
 // MyInt - Example trailing Comment
@@ -186,7 +186,7 @@ type ExampleMessage2_ExampleNested struct {
 func (x *ExampleMessage2_ExampleNested) Reset() {
 	*x = ExampleMessage2_ExampleNested{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_example_proto_msgTypes[3]
+		mi := &file_example2_proto_msgTypes[3]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -199,7 +199,7 @@ func (x *ExampleMessage2_ExampleNested) String() string {
 func (*ExampleMessage2_ExampleNested) ProtoMessage() {}
 
 func (x *ExampleMessage2_ExampleNested) ProtoReflect() protoreflect.Message {
-	mi := &file_example_proto_msgTypes[3]
+	mi := &file_example2_proto_msgTypes[3]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -212,7 +212,7 @@ func (x *ExampleMessage2_ExampleNested) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use ExampleMessage2_ExampleNested.ProtoReflect.Descriptor instead.
 func (*ExampleMessage2_ExampleNested) Descriptor() ([]byte, []int) {
-	return file_example_proto_rawDescGZIP(), []int{1, 0}
+	return file_example2_proto_rawDescGZIP(), []int{1, 0}
 }
 
 func (x *ExampleMessage2_ExampleNested) GetData() []byte {
@@ -222,63 +222,57 @@ func (x *ExampleMessage2_ExampleNested) GetData() []byte {
 	return nil
 }
 
-var File_example_proto protoreflect.FileDescriptor
+var File_example2_proto protoreflect.FileDescriptor
 
-var file_example_proto_rawDesc = []byte{
-	0x0a, 0x0d, 0x65, 0x78, 0x61, 0x6d, 0x70, 0x6c, 0x65, 0x2e, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x12,
-	0x02, 0x76, 0x31, 0x22, 0x2d, 0x0a, 0x0f, 0x45, 0x78, 0x61, 0x6d, 0x70, 0x6c, 0x65, 0x4d, 0x65,
-	0x73, 0x73, 0x61, 0x67, 0x65, 0x31, 0x12, 0x1a, 0x0a, 0x08, 0x4d, 0x79, 0x53, 0x74, 0x72, 0x69,
-	0x6e, 0x67, 0x18, 0x01, 0x20, 0x01, 0x28, 0x09, 0x52, 0x08, 0x4d, 0x79, 0x53, 0x74, 0x72, 0x69,
-	0x6e, 0x67, 0x22, 0x87, 0x01, 0x0a, 0x0f, 0x45, 0x78, 0x61, 0x6d, 0x70, 0x6c, 0x65, 0x4d, 0x65,
-	0x73, 0x73, 0x61, 0x67, 0x65, 0x32, 0x12, 0x14, 0x0a, 0x05, 0x4d, 0x79, 0x49, 0x6e, 0x74, 0x18,
-	0x01, 0x20, 0x01, 0x28, 0x05, 0x52, 0x05, 0x4d, 0x79, 0x49, 0x6e, 0x74, 0x12, 0x39, 0x0a, 0x06,
-	0x6e, 0x65, 0x73, 0x74, 0x65, 0x64, 0x18, 0x02, 0x20, 0x01, 0x28, 0x0b, 0x32, 0x21, 0x2e, 0x76,
-	0x31, 0x2e, 0x45, 0x78, 0x61, 0x6d, 0x70, 0x6c, 0x65, 0x4d, 0x65, 0x73, 0x73, 0x61, 0x67, 0x65,
-	0x32, 0x2e, 0x45, 0x78, 0x61, 0x6d, 0x70, 0x6c, 0x65, 0x4e, 0x65, 0x73, 0x74, 0x65, 0x64, 0x52,
-	0x06, 0x6e, 0x65, 0x73, 0x74, 0x65, 0x64, 0x1a, 0x23, 0x0a, 0x0d, 0x45, 0x78, 0x61, 0x6d, 0x70,
-	0x6c, 0x65, 0x4e, 0x65, 0x73, 0x74, 0x65, 0x64, 0x12, 0x12, 0x0a, 0x04, 0x64, 0x61, 0x74, 0x61,
-	0x18, 0x01, 0x20, 0x01, 0x28, 0x0c, 0x52, 0x04, 0x64, 0x61, 0x74, 0x61, 0x22, 0x0c, 0x0a, 0x0a,
-	0x52, 0x65, 0x74, 0x75, 0x72, 0x6e, 0x54, 0x79, 0x70, 0x65, 0x32, 0x7e, 0x0a, 0x0e, 0x45, 0x78,
-	0x61, 0x6d, 0x70, 0x6c, 0x65, 0x53, 0x65, 0x72, 0x76, 0x69, 0x63, 0x65, 0x12, 0x35, 0x0a, 0x0c,
-	0x45, 0x78, 0x61, 0x6d, 0x70, 0x6c, 0x65, 0x43, 0x61, 0x6c, 0x6c, 0x31, 0x12, 0x13, 0x2e, 0x76,
-	0x31, 0x2e, 0x45, 0x78, 0x61, 0x6d, 0x70, 0x6c, 0x65, 0x4d, 0x65, 0x73, 0x73, 0x61, 0x67, 0x65,
-	0x31, 0x1a, 0x0e, 0x2e, 0x76, 0x31, 0x2e, 0x52, 0x65, 0x74, 0x75, 0x72, 0x6e, 0x54, 0x79, 0x70,
-	0x65, 0x22, 0x00, 0x12, 0x35, 0x0a, 0x0c, 0x45, 0x78, 0x61, 0x6d, 0x70, 0x6c, 0x65, 0x43, 0x61,
-	0x6c, 0x6c, 0x32, 0x12, 0x13, 0x2e, 0x76, 0x31, 0x2e, 0x45, 0x78, 0x61, 0x6d, 0x70, 0x6c, 0x65,
-	0x4d, 0x65, 0x73, 0x73, 0x61, 0x67, 0x65, 0x32, 0x1a, 0x0e, 0x2e, 0x76, 0x31, 0x2e, 0x52, 0x65,
-	0x74, 0x75, 0x72, 0x6e, 0x54, 0x79, 0x70, 0x65, 0x22, 0x00, 0x42, 0x3f, 0x5a, 0x3d, 0x67, 0x69,
-	0x74, 0x68, 0x75, 0x62, 0x2e, 0x63, 0x6f, 0x6d, 0x2f, 0x67, 0x65, 0x6e, 0x64, 0x6f, 0x63, 0x75,
-	0x2d, 0x63, 0x6f, 0x6d, 0x2f, 0x73, 0x61, 0x6d, 0x70, 0x6c, 0x65, 0x2d, 0x63, 0x6c, 0x69, 0x65,
-	0x6e, 0x74, 0x2d, 0x73, 0x64, 0x6b, 0x2d, 0x72, 0x65, 0x70, 0x6f, 0x73, 0x69, 0x74, 0x6f, 0x72,
-	0x79, 0x2f, 0x73, 0x69, 0x6d, 0x70, 0x6c, 0x65, 0x3b, 0x78, 0x78, 0x62, 0x06, 0x70, 0x72, 0x6f,
-	0x74, 0x6f, 0x33,
+var file_example2_proto_rawDesc = []byte{
+	0x0a, 0x0e, 0x65, 0x78, 0x61, 0x6d, 0x70, 0x6c, 0x65, 0x32, 0x2e, 0x70, 0x72, 0x6f, 0x74, 0x6f,
+	0x22, 0x2d, 0x0a, 0x0f, 0x45, 0x78, 0x61, 0x6d, 0x70, 0x6c, 0x65, 0x4d, 0x65, 0x73, 0x73, 0x61,
+	0x67, 0x65, 0x31, 0x12, 0x1a, 0x0a, 0x08, 0x4d, 0x79, 0x53, 0x74, 0x72, 0x69, 0x6e, 0x67, 0x18,
+	0x01, 0x20, 0x01, 0x28, 0x09, 0x52, 0x08, 0x4d, 0x79, 0x53, 0x74, 0x72, 0x69, 0x6e, 0x67, 0x22,
+	0x84, 0x01, 0x0a, 0x0f, 0x45, 0x78, 0x61, 0x6d, 0x70, 0x6c, 0x65, 0x4d, 0x65, 0x73, 0x73, 0x61,
+	0x67, 0x65, 0x32, 0x12, 0x14, 0x0a, 0x05, 0x4d, 0x79, 0x49, 0x6e, 0x74, 0x18, 0x01, 0x20, 0x01,
+	0x28, 0x05, 0x52, 0x05, 0x4d, 0x79, 0x49, 0x6e, 0x74, 0x12, 0x36, 0x0a, 0x06, 0x6e, 0x65, 0x73,
+	0x74, 0x65, 0x64, 0x18, 0x02, 0x20, 0x01, 0x28, 0x0b, 0x32, 0x1e, 0x2e, 0x45, 0x78, 0x61, 0x6d,
+	0x70, 0x6c, 0x65, 0x4d, 0x65, 0x73, 0x73, 0x61, 0x67, 0x65, 0x32, 0x2e, 0x45, 0x78, 0x61, 0x6d,
+	0x70, 0x6c, 0x65, 0x4e, 0x65, 0x73, 0x74, 0x65, 0x64, 0x52, 0x06, 0x6e, 0x65, 0x73, 0x74, 0x65,
+	0x64, 0x1a, 0x23, 0x0a, 0x0d, 0x45, 0x78, 0x61, 0x6d, 0x70, 0x6c, 0x65, 0x4e, 0x65, 0x73, 0x74,
+	0x65, 0x64, 0x12, 0x12, 0x0a, 0x04, 0x64, 0x61, 0x74, 0x61, 0x18, 0x01, 0x20, 0x01, 0x28, 0x0c,
+	0x52, 0x04, 0x64, 0x61, 0x74, 0x61, 0x22, 0x0c, 0x0a, 0x0a, 0x52, 0x65, 0x74, 0x75, 0x72, 0x6e,
+	0x54, 0x79, 0x70, 0x65, 0x32, 0x72, 0x0a, 0x0e, 0x45, 0x78, 0x61, 0x6d, 0x70, 0x6c, 0x65, 0x53,
+	0x65, 0x72, 0x76, 0x69, 0x63, 0x65, 0x12, 0x2f, 0x0a, 0x0c, 0x45, 0x78, 0x61, 0x6d, 0x70, 0x6c,
+	0x65, 0x43, 0x61, 0x6c, 0x6c, 0x31, 0x12, 0x10, 0x2e, 0x45, 0x78, 0x61, 0x6d, 0x70, 0x6c, 0x65,
+	0x4d, 0x65, 0x73, 0x73, 0x61, 0x67, 0x65, 0x31, 0x1a, 0x0b, 0x2e, 0x52, 0x65, 0x74, 0x75, 0x72,
+	0x6e, 0x54, 0x79, 0x70, 0x65, 0x22, 0x00, 0x12, 0x2f, 0x0a, 0x0c, 0x45, 0x78, 0x61, 0x6d, 0x70,
+	0x6c, 0x65, 0x43, 0x61, 0x6c, 0x6c, 0x32, 0x12, 0x10, 0x2e, 0x45, 0x78, 0x61, 0x6d, 0x70, 0x6c,
+	0x65, 0x4d, 0x65, 0x73, 0x73, 0x61, 0x67, 0x65, 0x32, 0x1a, 0x0b, 0x2e, 0x52, 0x65, 0x74, 0x75,
+	0x72, 0x6e, 0x54, 0x79, 0x70, 0x65, 0x22, 0x00, 0x62, 0x06, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x33,
 }
 
 var (
-	file_example_proto_rawDescOnce sync.Once
-	file_example_proto_rawDescData = file_example_proto_rawDesc
+	file_example2_proto_rawDescOnce sync.Once
+	file_example2_proto_rawDescData = file_example2_proto_rawDesc
 )
 
-func file_example_proto_rawDescGZIP() []byte {
-	file_example_proto_rawDescOnce.Do(func() {
-		file_example_proto_rawDescData = protoimpl.X.CompressGZIP(file_example_proto_rawDescData)
+func file_example2_proto_rawDescGZIP() []byte {
+	file_example2_proto_rawDescOnce.Do(func() {
+		file_example2_proto_rawDescData = protoimpl.X.CompressGZIP(file_example2_proto_rawDescData)
 	})
-	return file_example_proto_rawDescData
+	return file_example2_proto_rawDescData
 }
 
-var file_example_proto_msgTypes = make([]protoimpl.MessageInfo, 4)
-var file_example_proto_goTypes = []interface{}{
-	(*ExampleMessage1)(nil),               // 0: v1.ExampleMessage1
-	(*ExampleMessage2)(nil),               // 1: v1.ExampleMessage2
-	(*ReturnType)(nil),                    // 2: v1.ReturnType
-	(*ExampleMessage2_ExampleNested)(nil), // 3: v1.ExampleMessage2.ExampleNested
+var file_example2_proto_msgTypes = make([]protoimpl.MessageInfo, 4)
+var file_example2_proto_goTypes = []interface{}{
+	(*ExampleMessage1)(nil),               // 0: ExampleMessage1
+	(*ExampleMessage2)(nil),               // 1: ExampleMessage2
+	(*ReturnType)(nil),                    // 2: ReturnType
+	(*ExampleMessage2_ExampleNested)(nil), // 3: ExampleMessage2.ExampleNested
 }
-var file_example_proto_depIdxs = []int32{
-	3, // 0: v1.ExampleMessage2.nested:type_name -> v1.ExampleMessage2.ExampleNested
-	0, // 1: v1.ExampleService.ExampleCall1:input_type -> v1.ExampleMessage1
-	1, // 2: v1.ExampleService.ExampleCall2:input_type -> v1.ExampleMessage2
-	2, // 3: v1.ExampleService.ExampleCall1:output_type -> v1.ReturnType
-	2, // 4: v1.ExampleService.ExampleCall2:output_type -> v1.ReturnType
+var file_example2_proto_depIdxs = []int32{
+	3, // 0: ExampleMessage2.nested:type_name -> ExampleMessage2.ExampleNested
+	0, // 1: ExampleService.ExampleCall1:input_type -> ExampleMessage1
+	1, // 2: ExampleService.ExampleCall2:input_type -> ExampleMessage2
+	2, // 3: ExampleService.ExampleCall1:output_type -> ReturnType
+	2, // 4: ExampleService.ExampleCall2:output_type -> ReturnType
 	3, // [3:5] is the sub-list for method output_type
 	1, // [1:3] is the sub-list for method input_type
 	1, // [1:1] is the sub-list for extension type_name
@@ -286,13 +280,13 @@ var file_example_proto_depIdxs = []int32{
 	0, // [0:1] is the sub-list for field type_name
 }
 
-func init() { file_example_proto_init() }
-func file_example_proto_init() {
-	if File_example_proto != nil {
+func init() { file_example2_proto_init() }
+func file_example2_proto_init() {
+	if File_example2_proto != nil {
 		return
 	}
 	if !protoimpl.UnsafeEnabled {
-		file_example_proto_msgTypes[0].Exporter = func(v interface{}, i int) interface{} {
+		file_example2_proto_msgTypes[0].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*ExampleMessage1); i {
 			case 0:
 				return &v.state
@@ -304,7 +298,7 @@ func file_example_proto_init() {
 				return nil
 			}
 		}
-		file_example_proto_msgTypes[1].Exporter = func(v interface{}, i int) interface{} {
+		file_example2_proto_msgTypes[1].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*ExampleMessage2); i {
 			case 0:
 				return &v.state
@@ -316,7 +310,7 @@ func file_example_proto_init() {
 				return nil
 			}
 		}
-		file_example_proto_msgTypes[2].Exporter = func(v interface{}, i int) interface{} {
+		file_example2_proto_msgTypes[2].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*ReturnType); i {
 			case 0:
 				return &v.state
@@ -328,7 +322,7 @@ func file_example_proto_init() {
 				return nil
 			}
 		}
-		file_example_proto_msgTypes[3].Exporter = func(v interface{}, i int) interface{} {
+		file_example2_proto_msgTypes[3].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*ExampleMessage2_ExampleNested); i {
 			case 0:
 				return &v.state
@@ -345,20 +339,20 @@ func file_example_proto_init() {
 	out := protoimpl.TypeBuilder{
 		File: protoimpl.DescBuilder{
 			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
-			RawDescriptor: file_example_proto_rawDesc,
+			RawDescriptor: file_example2_proto_rawDesc,
 			NumEnums:      0,
 			NumMessages:   4,
 			NumExtensions: 0,
 			NumServices:   1,
 		},
-		GoTypes:           file_example_proto_goTypes,
-		DependencyIndexes: file_example_proto_depIdxs,
-		MessageInfos:      file_example_proto_msgTypes,
+		GoTypes:           file_example2_proto_goTypes,
+		DependencyIndexes: file_example2_proto_depIdxs,
+		MessageInfos:      file_example2_proto_msgTypes,
 	}.Build()
-	File_example_proto = out.File
-	file_example_proto_rawDesc = nil
-	file_example_proto_goTypes = nil
-	file_example_proto_depIdxs = nil
+	File_example2_proto = out.File
+	file_example2_proto_rawDesc = nil
+	file_example2_proto_goTypes = nil
+	file_example2_proto_depIdxs = nil
 }
 
 // Reference imports to suppress errors if they are not otherwise used.
@@ -387,7 +381,7 @@ func NewExampleServiceClient(cc grpc.ClientConnInterface) ExampleServiceClient {
 
 func (c *exampleServiceClient) ExampleCall1(ctx context.Context, in *ExampleMessage1, opts ...grpc.CallOption) (*ReturnType, error) {
 	out := new(ReturnType)
-	err := c.cc.Invoke(ctx, "/v1.ExampleService/ExampleCall1", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/ExampleService/ExampleCall1", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -396,7 +390,7 @@ func (c *exampleServiceClient) ExampleCall1(ctx context.Context, in *ExampleMess
 
 func (c *exampleServiceClient) ExampleCall2(ctx context.Context, in *ExampleMessage2, opts ...grpc.CallOption) (*ReturnType, error) {
 	out := new(ReturnType)
-	err := c.cc.Invoke(ctx, "/v1.ExampleService/ExampleCall2", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/ExampleService/ExampleCall2", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -434,7 +428,7 @@ func _ExampleService_ExampleCall1_Handler(srv interface{}, ctx context.Context, 
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/v1.ExampleService/ExampleCall1",
+		FullMethod: "/ExampleService/ExampleCall1",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(ExampleServiceServer).ExampleCall1(ctx, req.(*ExampleMessage1))
@@ -452,7 +446,7 @@ func _ExampleService_ExampleCall2_Handler(srv interface{}, ctx context.Context, 
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/v1.ExampleService/ExampleCall2",
+		FullMethod: "/ExampleService/ExampleCall2",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(ExampleServiceServer).ExampleCall2(ctx, req.(*ExampleMessage2))
@@ -461,7 +455,7 @@ func _ExampleService_ExampleCall2_Handler(srv interface{}, ctx context.Context, 
 }
 
 var _ExampleService_serviceDesc = grpc.ServiceDesc{
-	ServiceName: "v1.ExampleService",
+	ServiceName: "ExampleService",
 	HandlerType: (*ExampleServiceServer)(nil),
 	Methods: []grpc.MethodDesc{
 		{
@@ -474,5 +468,5 @@ var _ExampleService_serviceDesc = grpc.ServiceDesc{
 		},
 	},
 	Streams:  []grpc.StreamDesc{},
-	Metadata: "example.proto",
+	Metadata: "example2.proto",
 }
